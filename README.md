@@ -29,15 +29,12 @@ The pipeline consists of four main modules:
 3.  **Analysis & Reasoning:** Anomaly detection and state summarization.
 4.  **Output & Interaction:** RCA reporting and Natural Language Query Interface for operators.
 
-> ![System Architecture](architecture.png)
-> *(Please upload the architecture diagram from your paper here)*
-
 ## Tech Stack
 
 * **Language:** Python
 * **AI & NLP:** Hugging Face Transformers, PyTorch, LangChain
 * **Data Processing:** Pandas, NumPy
-* **Vector Database:** FAISS (Planned integration for RAG)
+* **Vector Database:** FAISS
 * **Techniques:** Prompt Engineering, Parameter-Efficient Fine-Tuning (PEFT), Cosine Similarity
 
 ## Operational Workflow (Scenario)
@@ -61,5 +58,5 @@ This project is part of a senior capstone study titled:
 > "SLM-Based Resource Efficient Log Analysis System: Systematic Review and End-to-End SLM-Based Architecture Proposal".
 
 ---
-*Author: [Your Name]*
-*Contact: [Your Email/LinkedIn]*
+*Author: Emre Ceyhan & Kutlu Türkücü*
+*Contact: Emre Ceyhan www.linkedin.com/in/emre-ceyhan-02602b304*
