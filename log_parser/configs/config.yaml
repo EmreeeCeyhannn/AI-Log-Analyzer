@@ -1,0 +1,17 @@
+model:
+  name_or_path: "distilgpt2"
+  max_new_tokens: 64
+
+pipeline:
+  batch_size: 16
+  min_cluster_tokens: 3
+
+api:
+  host: "127.0.0.1"
+  port: 8000
+
+observability:
+  log_file_path: "logs/system.log"
+
+ui:
+  port: 7860

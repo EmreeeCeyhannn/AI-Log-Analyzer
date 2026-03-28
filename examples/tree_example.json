@@ -1,0 +1,47 @@
+{
+	"generated_at": "2026-03-27T12:00:00+00:00",
+	"latest_batch_id": 12,
+	"show_current_batch": true,
+	"debug_mode": false,
+	"total_logs": 5,
+	"levels": {
+		"INFO": {
+			"color": "blue",
+			"event_types": {
+				"login": {
+					"templates": [
+						{
+							"template_text": "User <*> logged in from <*>",
+							"count": 3,
+							"global_count": 120,
+							"first_seen": "2026-03-20T09:00:00+00:00",
+							"last_seen": "2026-03-27T11:59:00+00:00",
+							"source": {
+								"cache": 2,
+								"slm": 1,
+								"cache_pct": 66.67,
+								"slm_pct": 33.33
+							},
+							"current_batch_count": 2,
+							"highlight_current_batch": true,
+							"instances": [
+								{
+									"original_log": "INFO User 123 logged in from 10.0.0.1",
+									"source": "CACHE",
+									"batch_id": 12,
+									"cluster_id": "info user <num>",
+									"masked": "INFO User <*> logged in from <*>",
+									"in_current_batch": true
+								}
+							],
+							"instances_total": 3,
+							"instances_truncated": false,
+							"omitted_instances": 0,
+							"example_logs": ["INFO User 123 logged in from 10.0.0.1"]
+						}
+					]
+				}
+			}
+		}
+	}
+}
