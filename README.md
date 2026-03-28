@@ -250,3 +250,42 @@ Response:
 - Replace `model.name_or_path` with your fine-tuned local HF path.
 - For multi-instance deployment, replace in-memory cache/intelligence with Redis/Postgres.
 - Add auth/rate-limits for API and export logs to your SIEM stack.
+
+## Research Context
+
+This implementation aligns with the capstone concept:
+
+**SLM-Based Resource Efficient Log Analysis System**
+
+Core research goals reflected in this project:
+
+- SLM-first local inference for low-latency operation.
+- Micro-batch style processing to reduce model calls.
+- Evidence-first template extraction and structured run tracing.
+- Basis for RCA and future predictive maintenance integrations.
+
+## Abstract
+
+This project presents a conceptual architecture for a Resource-Efficient AIOps pipeline designed to analyze high-volume system logs using Small Language Models (SLMs).
+
+While Large Language Models (LLMs) offer strong performance in log analysis, they often suffer from high latency and operational costs in online scenarios. To address this, this system proposes an end-to-end pipeline that integrates micro-batching, retrieval-augmented patterns, and predictive extensions to provide real-time anomaly detection and root-cause support without the heavy computational burden of giant models.
+
+## Operational Workflow (Research View)
+
+| Stage | Input | Expected Output |
+| :--- | :--- | :--- |
+| 1. Micro-Batching | Raw log stream (time/line window) | Batch ID + Raw Lines |
+| 2. Parsing | Raw logs within batch | Log templates + parameters |
+| 3. Embedding | Log templates | Vector representations |
+| 4. Retrieval | Current vector | Similar historical incidents |
+| 5. Detection | Template sequence + scores | Anomaly label |
+| 6. Summarization | Evidence + metadata | Event summary |
+| 7. RCA Support | Summary + retrieved context | Root-cause hypotheses |
+| 8. Early Warning | Time-series history | Risk alert |
+
+## Authors
+
+- Emre Ceyhan
+- Kutlu Turkuçu
+
+LinkedIn: www.linkedin.com/in/emre-ceyhan-02602b304
